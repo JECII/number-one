@@ -1,0 +1,30 @@
+<html ng-app="ng-number-one">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Number One</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="MainController as mc">
+    <div id="one" class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          
+      
+      <h1 style="font-size: 1000px; color: red">{{mc.counter}}</h1>
+      <button ng-click="mc.changeCount(1)">Increment</button>
+      <button ng-click="mc.changeCount(-1)">Decrement</button>
+
+        </div>
+      </div>
+    </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/component/MainController.js"></script>
+
+</body>
+
+</html>
